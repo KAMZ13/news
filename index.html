@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <section class="col-12 col-md-12 col-lg-12" id="Title">
+        <h1 id="title">ITESO NEWS APP</h1>
+        <input id="searchbar" type="text">
+        <button  id="submit" >Go</button>
+        <h2>The project depens on NEWS API, a single HTTP REST API for searching and retreiveing live articles from all over the web</h2>
+    </section>
+
+    <div id="news-container">
+
+    </div>
+
+
+    <script id="news-template" type="text/x-handlebars">
+        {{#each news}}
+    <div class="news-item">
+        <img src="{{this.urlToImage}}" />
+        <h2>{{this.title}}</h2>
+        <p>{{this.description}}</p>
+        <a href="{{this.url}}" target="_blank">Ver más</a>
+    </div>
+        {{/each}}
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="scripts/main.js" type="module"></script>
+
+</body>
+</html>
