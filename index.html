@@ -12,21 +12,21 @@
         <h1 id="title">ITESO NEWS APP</h1>
         <input id="searchbar" type="text">
         <button  id="submit" >Go</button>
-        <h2>The project depens on NEWS API, a single HTTP REST API for searching and retreiveing live articles from all over the web</h2>
+        <h2 id="desc">The project depens on NEWS API, a single HTTP REST API for searching and retreiveing live articles from all over the web</h2>
     </section>
 
-    <div id="news-container">
+    <div id="news-container" class="news-item">
 
     </div>
 
 
     <script id="news-template" type="text/x-handlebars">
         {{#each news}}
-    <div class="news-item">
-        <img src="{{this.urlToImage}}" />
-        <h2>{{this.title}}</h2>
-        <p>{{this.description}}</p>
-        <a href="{{this.url}}" target="_blank">Ver más</a>
+    <div id="news-item">
+        <img class="nwt" id="pic" src="{{this.urlToImage}}" />
+        <h2 class="nwt" id="titl">{{this.title}}</h2>
+        <p class="nwt" id="ds">{{this.description}}</p>
+        <a class="nwt"  href="{{this.url}}" target="_blank">Ver más</a>
     </div>
         {{/each}}
     </script>

@@ -64,39 +64,51 @@
   }
 }
 * {
-  background-color: black;
+  background-color: #2b2a2a;
   color: white;
 }
 
 #Title {
   padding: 10px;
+  align-content: center;
+  text-align: center;
 }
 
 #searchbar {
-  width: 100%;
+  width: 75%;
   background-color: white;
   color: violet;
+  font-style: italic;
 }
 
 #submit {
-  width: 100%;
+  width: 75%;
   color: white;
   background-color: #1665c0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-h2 {
+#desc {
   font-size: 8pt;
   text-align: center;
 }
 
 #news-container {
-  font-weight: 12px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-content: center;
+  border: 15px, ivory;
 }
 
-img {
-  width: 100px;
+#pic {
+  width: 500px;
+  margin: auto;
+  align-content: center;
+  padding-inline-end: 30px;
+}
+
+.nwt {
+  color: teal;
+  text-align: center;
+  align-content: center;
 }
