@@ -4,6 +4,7 @@
     background-color: $backgroundcolor;
     color:$textcolor;
 }
+
 #Title{
     padding: 10px;
     align-content: center;
@@ -37,20 +38,25 @@
     margin: auto;
     align-content: center;
     border: 15px, ivory;
+    padding: 30px;
     
 }
 
 #pic{
-    width: 500px;
+    width: 350px;
+    height: 350px;
     margin: auto;
     align-content: center;
-  padding-inline-end: 30px;
+    padding-inline-end: 30px;
+  
     
 }
 .nwt{
     color: $newstemplateBG;
     text-align: center;
     align-content: center;
+    padding: 10px;
+    padding-right: 30px;
 
 
 }
