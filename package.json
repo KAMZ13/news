@@ -1,16 +1,18 @@
 {
-  "name": "newsapi",
+  "name": "practica2",
   "version": "1.0.0",
-  "description": "practica 1 de PAE",
-  "main": "index.js",
+  "description": "practica 2 de PAE",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "styles": "gulp styles",
     "tsc": "gulp scripts",
-    "styles:watch":"gulp styles:watch",
-    "scripts:watch":"gulp scripts:watch",
+    "styles:watch": "gulp styles:watch",
+    "scripts:watch": "gulp scripts:watch",
     "serve": "gulp serve",
-    "build": "gulp"
+    "build": "gulp",
+    "dev": "cross-env NODE_ENV=dev nodemon .",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
@@ -22,8 +24,15 @@
     "url": "https://github.com/KAMZ13/news/issues"
   },
   "homepage": "https://github.com/KAMZ13/news#readme",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.23.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "handlebar": "^1.0.0"
+  },
   "devDependencies": {
+    "@types/node": "^16.10.4",
+    "cross-env": "^7.0.3",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
     "gulp-serve": "^1.4.0",
@@ -31,5 +40,4 @@
     "sass": "^1.42.1",
     "typescript": "^4.4.3"
   }
-
 }
