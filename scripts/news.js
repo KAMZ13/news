@@ -1,3 +1,4 @@
+const dotenv = require('../../dotenv').config();
 const key = process.env.APIK;
 export class News {
     getAll(nodes) {

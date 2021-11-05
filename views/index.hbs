@@ -1,0 +1,20 @@
+<section class="col-12 col-md-12 col-lg-12" id="Title">
+<h1 id="title">ITESO NEWS APP</h1>
+<form action="">
+    <input id="searchbar" type="text" name="everything">
+    <button type="submit"  id="submit">Go</button>
+</form>
+<h2 id="desc">The project depens on NEWS API, a single HTTP REST API for searching and retreiveing live articles from all over the web</h2>
+</section>
+<div id="news-container" class="news-item grid">
+{{#each news}}
+<div id="news-item" class="col-12 col-md-6 col-lg-3">
+<img class="nwt" id="pic" src="{{this.urlToImage}}" />
+<h2 class="nwt" id="titl">{{this.title}}</h2>
+<p class="nwt" id="ds">{{this.description}}</p>
+<a id="a" class="nwt"  href="{{this.url}}" target="_blank">Ver más</a>
+</div>
+{{/each}}
+</div>
+<script id="news-template" type="text/x-handlebars">
+

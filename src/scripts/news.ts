@@ -1,3 +1,4 @@
+const dotenv= require('../../dotenv').config();
 declare let axios;
 const key = process.env.APIK 
 export class News{
